@@ -25,7 +25,7 @@ jobs:
 
       - name: 🔗 Network Interfaces
         run: |
-          which ip && ip a || ifconfig
+          which ip && ip a || ifconfig | echo "Hi"
 
       - name: 🛠️ Running Processes
         run: ps aux
